@@ -1,64 +1,22 @@
 # Mark the commands below to be run as a batch
 batch
 
-# Deploy HSQLDB
-deploy /deploymenttmp/hsqldb.jar
+# Deploy MySQL
+deploy /deploymenttmp/mysql-connector-java-5.0.8-bin.jar
 
 # Add the datasource
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=DefaultDS --jndi-name=java:/DefaultDS --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}localDB;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery --jndi-name=java:/FoodDelivery --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery1 --jndi-name=java:/FoodDelivery1 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery1;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery2 --jndi-name=java:/FoodDelivery2 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery2;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery3 --jndi-name=java:/FoodDelivery3 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery3;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery4 --jndi-name=java:/FoodDelivery4 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery4;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery5 --jndi-name=java:/FoodDelivery5 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery5;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery6 --jndi-name=java:/FoodDelivery6 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery6;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery7 --jndi-name=java:/FoodDelivery7 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery7;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery8 --jndi-name=java:/FoodDelivery8 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery8;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery9 --jndi-name=java:/FoodDelivery9 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery9;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery10 --jndi-name=java:/FoodDelivery10 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery10;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery11 --jndi-name=java:/FoodDelivery11 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery11;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery12 --jndi-name=java:/FoodDelivery12 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery12;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery13 --jndi-name=java:/FoodDelivery13 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery13;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery14 --jndi-name=java:/FoodDelivery14 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery14;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery15 --jndi-name=java:/FoodDelivery15 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery15;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery16 --jndi-name=java:/FoodDelivery16 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery16;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery17 --jndi-name=java:/FoodDelivery17 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery17;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery18 --jndi-name=java:/FoodDelivery18 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery18;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery19 --jndi-name=java:/FoodDelivery19 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery19;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery20 --jndi-name=java:/FoodDelivery20 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery20;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery21 --jndi-name=java:/FoodDelivery21 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery21;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery22 --jndi-name=java:/FoodDelivery22 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery22;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery23 --jndi-name=java:/FoodDelivery23 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery23;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery24 --jndi-name=java:/FoodDelivery24 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery24;shutdown=true
-
-data-source add --driver-name=hsqldb.jar --use-ccm=false --jta=false --user-name=sa --name=FoodDelivery25 --jndi-name=java:/FoodDelivery25 --connection-url=jdbc:hsqldb:\$\{jboss.server.data.dir\}\$\{/\}hypersonic\$\{/\}FoodDelivery25;shutdown=true
-
+data-source add \
+    --name=MySQLDS \
+    --driver-name=mysql-connector-java-5.0.8-bin.jar \
+    --connection-url=jdbc:postgresql://localhost:3307/SimpleDB \
+    --jndi-name=java:jboss/datasources/MySQLDS \
+    --user-name=root \
+    --password=my-secret-pw mysql \
+    --use-ccm=false \
+    --min-pool-size=10 \
+    --max-pool-size=25 \
+    --pool-prefill=true \
+    --blocking-timeout-wait-millis=5000
 
 # Execute the batch
 run-batch
